@@ -1,0 +1,17 @@
+pyg = 'ay'
+
+original = raw_input('Enter a word:')
+
+if len(original) > 0 and original.isalpha():
+  #only if there is an alphanumeric input will it go forward
+  word = original.lower()
+  #changes into lowecase
+  first = word[0]
+  #picks out first letter of the input word
+  new_word = word + first + pyg
+  #translates to add first letter to end
+  new_word = new_word[1:len(new_word)]
+  #gets rid of initial letter which is now at the end
+  print new_word
+else:
+    print 'empty'
